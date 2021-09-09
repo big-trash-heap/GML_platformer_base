@@ -1,0 +1,3 @@
+
+globalvar GHash;
+GHash = {};

@@ -97,13 +97,6 @@ if (self.ph_colls_enable) {
 #region collision disable
 else {
 	
-	#region reset
-	
-	self.ph_state_collision_x = false;
-	self.ph_state_collision_y = false;
-	
-	#endregion
-	
 	#region move_x
 	
 	self.x += self.ph_speed_x;

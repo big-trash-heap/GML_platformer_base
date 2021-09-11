@@ -25,6 +25,7 @@
         "PH_TYPE.SOLID",
         "PH_TYPE.SOFT",
       ],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"ph_colls_type","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":1,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"ph_colls_subtype","tags":[],"resourceType":"GMObjectProperty",},
   ],
   "overriddenProperties": [],
   "parent": {

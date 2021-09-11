@@ -5,6 +5,9 @@ self.ph_speed_x = 0;
 self.ph_speed_y = 0;
 
 //
+self.ph_soft_skip = false;
+
+//
 self.ph_state_gravity = true;
 
 //
@@ -27,5 +30,3 @@ debug {
 		ph_colls_enable			: " + string(self.ph_colls_enable) + @"
 ");
 }
-
-GHash.yy = y;

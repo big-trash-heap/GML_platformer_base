@@ -35,8 +35,9 @@ function __cb_obj_flags_y(_inst, _flags) {
 		
 		if (_inst.ph_colls_type == PH_TYPE.SOFT) {
 			
-			var _speed = GHash.y2 - GHash.y1;
+			if (self.ph_soft_skip) return false;
 			
+			var _speed = GHash.y2 - GHash.y1;
 			if (_speed > 0 && self.bbox_bottom < _inst.bbox_top + 1) {
 				
 				return (place_meeting(GHash.x1, GHash.y1, _inst) != noone);

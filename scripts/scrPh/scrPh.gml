@@ -1,7 +1,7 @@
 
 								// Объект от которого наследуются все столкновения
 								// (Он всегда один)
-#macro PH_COLLS_OBJECT			objCollsObj
+#macro PH_COLLS_OBJECT			objPhColls
 
 global.__ph_list = ds_list_create(); // Используется для проверки столкновений
 

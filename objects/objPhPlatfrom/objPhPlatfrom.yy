@@ -1,16 +1,10 @@
 {
-  "spriteId": {
-    "name": "sprPhCollision",
-    "path": "sprites/sprPhCollision/sprPhCollision.yy",
-  },
+  "spriteId": null,
   "solid": false,
-  "visible": false,
+  "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "objPhColls",
-    "path": "objects/objPhColls/objPhColls.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -23,17 +17,15 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "platromer",
-    "path": "folders/platromer.yy",
+    "name": "__platromer",
+    "path": "folders/platromer/__platromer.yy",
   },
   "resourceVersion": "1.0",
-  "name": "objPhCollision",
+  "name": "objPhPlatfrom",
   "tags": [],
   "resourceType": "GMObject",
 }

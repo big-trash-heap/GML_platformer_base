@@ -5,8 +5,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "objCollsObj",
-    "path": "objects/objCollsObj/objCollsObj.yy",
+    "name": "objPhColls",
+    "path": "objects/objPhColls/objPhColls.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -31,7 +31,7 @@
     {"varType":0,"value":"infinity","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"ph_colls_gravity_max","tags":[],"resourceType":"GMObjectProperty",},
   ],
   "overriddenProperties": [
-    {"propertyId":{"name":"ph_colls_type","path":"objects/objCollsObj/objCollsObj.yy",},"objectId":{"name":"objCollsObj","path":"objects/objCollsObj/objCollsObj.yy",},"value":"PH_TYPE.SOFT","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"ph_colls_type","path":"objects/objPhColls/objPhColls.yy",},"objectId":{"name":"objPhColls","path":"objects/objPhColls/objPhColls.yy",},"value":"PH_TYPE.SOFT","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
     "name": "__platromer",

@@ -32,7 +32,7 @@
     "path": "folders/platromer/__platromer.yy",
   },
   "resourceVersion": "1.0",
-  "name": "objCollsObj",
+  "name": "objPhColls",
   "tags": [],
   "resourceType": "GMObject",
 }

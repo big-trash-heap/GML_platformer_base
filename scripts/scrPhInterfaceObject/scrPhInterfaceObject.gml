@@ -78,10 +78,10 @@ function ph_set_speed_direction(_speed, _direction, _id=self) {
 
 function ph_set_speed_y_jump(_pixel, _id=self) {
 	
-	_id.ph_speed_y = ph_math_speed_y_jump(_pixel);
+	_id.ph_speed_y = ph_math_speed_y_jump(_pixel, _id.ph_colls_gravity_acl);
 }
 
-function ph_math_speed_y_jump(_pixel) {
+function ph_math_speed_y_jump(_pixel, _acl) {
 	
 	debug {
 		
@@ -91,11 +91,43 @@ function ph_math_speed_y_jump(_pixel) {
 		}
 	}
 	
-	var _k = global.phGravityAcl / 2;
+	var _k = _acl / 2;
 	var _y = (_k + sqrt(power(_k, 2) + (4 * _k * _pixel))) / (2 * _k);
 	
-	return (_y * -global.phGravityAcl);
+	return (_y * -_acl);
 }
 
 #endregion
 
+
+
+
+
+/*
+
+
+//
+self.ph_colls_obj_flags = (1 << self.image_index);
+
+//
+debug {
+	
+	self.visible = true;
+	if (self.object_index != objCollsObj) {
+		
+		show_error("Не наследуемое событие: objCollsObj.create (" 
+			+ object_get_name(self.object_index) + ")", true);
+	}
+	
+	if (self.image_index >= sprite_get_number(self.sprite_index)
+		|| self.image_index < 0) {
+		
+		show_error("Не корректный image_index (" 
+			+ object_get_name(self.object_index) + ")", true);
+	}
+}
+
+
+
+
+// */

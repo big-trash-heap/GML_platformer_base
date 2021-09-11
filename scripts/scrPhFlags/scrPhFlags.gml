@@ -2,8 +2,6 @@
 
 #macro PH_COLLS_OBJECT_MASK_TYPECOUNT		32
 #macro PH_COLLS_OBJECT_MASK_PR_ALLFLAGS	    ( (1 << PH_COLLS_OBJECT_MASK_TYPECOUNT) - 1 )
-#macro PH_COLLS_OBJECT_MASK_PR_SOLID		(1 << 0)
-#macro PH_COLLS_OBJECT_MASK_PR_SOFT			(1 << 1)
 
 
 #region collisions-flags
@@ -27,7 +25,7 @@ function place_meeting_flags_list(_x, _y, _list, _ordered=false, _flags=self.ph_
 
 function __cb_obj_flags(_inst, _flags) {
 	
-	if (_inst.ph_colls_obj_flags == PH_COLLS_OBJECT_MASK_PR_SOFT) return false;
+	if (_inst.ph_colls_type == PH_TYPE.SOFT) return false;
 	return (_inst.ph_colls_enable && _inst.ph_colls_obj_flags & _flags);
 }
 
@@ -35,7 +33,7 @@ function __cb_obj_flags_y(_inst, _flags) {
 	
 	if (_inst.ph_colls_enable && _inst.ph_colls_obj_flags & _flags) {
 		
-		if (_inst.ph_colls_obj_flags == PH_COLLS_OBJECT_MASK_PR_SOFT) {
+		if (_inst.ph_colls_type == PH_TYPE.SOFT) {
 			
 			var _speed = GHash.y2 - GHash.y1;
 			

@@ -61,7 +61,7 @@ if (self.ph_colls_enable) {
 	if (self.ph_state_gravity) {
 		
 		if (self.ph_colls_gravity_enable)
-			self.ph_speed_y = min(self.ph_speed_y + global.phGravityAcl, global.phGravityMax);
+			self.ph_speed_y = min(self.ph_speed_y + self.ph_colls_gravity_acl, self.ph_colls_gravity_max);
 		
 		__setHash_points(self.x, self.y, _, self.y + self.ph_speed_y);
 		self.ph_state_collision_y =
@@ -106,7 +106,7 @@ else {
 	#region move_y
 	
 	if (self.ph_colls_gravity_enable)
-		self.ph_speed_y = min(self.ph_speed_y + global.phGravityAcl, global.phGravityMax);
+		self.ph_speed_y = min(self.ph_speed_y + self.ph_colls_gravity_acl, self.ph_colls_gravity_max);
 	
 	self.y += self.ph_speed_y;
 	

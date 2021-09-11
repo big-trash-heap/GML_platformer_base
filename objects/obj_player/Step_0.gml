@@ -1,6 +1,24 @@
 
 //
-self.ph_speed_x = 3 * (keyboard_check(ord("D")) - keyboard_check(ord("A")));
+var _key_x = (keyboard_check(ord("D")) - keyboard_check(ord("A")));
+
+//
+if (_key_x != 0) {
+	
+	if (_key_x == -1) {
+		
+		self.ph_speed_x = max(-3, self.ph_speed_x - 0.3);
+	}
+	else {
+		
+		self.ph_speed_x = min(3, self.ph_speed_x + 0.3);
+	}
+}
+else {
+	
+	self.ph_speed_x = sign(self.ph_speed_x) * max(0, abs(self.ph_speed_x) - 0.3);
+}
+
 //self.ph_speed_y = 3 * (keyboard_check(ord("W")) - keyboard_check(ord("S")));
 
 //

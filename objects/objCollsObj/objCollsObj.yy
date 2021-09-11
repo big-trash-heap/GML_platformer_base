@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "sprPhCollision",
-    "path": "sprites/sprPhCollision/sprPhCollision.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": false,
   "spriteMaskId": null,
@@ -20,17 +17,19 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [
     {"varType":3,"value":"True","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"ph_colls_enable","tags":[],"resourceType":"GMObjectProperty",},
-    {"varType":4,"value":"7","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"ph_colls_obj_flags","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":4,"value":"1","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"ph_colls_obj_flags","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":6,"value":"PH_TYPE.SOLID","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[
+        "PH_TYPE.SOLID",
+        "PH_TYPE.SOFT",
+      ],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"ph_colls_type","tags":[],"resourceType":"GMObjectProperty",},
   ],
   "overriddenProperties": [],
   "parent": {
-    "name": "platromer",
-    "path": "folders/platromer.yy",
+    "name": "__platromer",
+    "path": "folders/platromer/__platromer.yy",
   },
   "resourceVersion": "1.0",
   "name": "objCollsObj",

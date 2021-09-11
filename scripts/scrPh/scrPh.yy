@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "platromer",
-    "path": "folders/platromer.yy",
+    "name": "__platromer",
+    "path": "folders/platromer/__platromer.yy",
   },
   "resourceVersion": "1.0",
   "name": "scrPh",

@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "7Bit",
-    "path": "7Bit.yyp",
+    "name": "Seqcode",
+    "path": "folders/Tools/Seqcode.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Script27",
+  "name": "scrSeqcode",
   "tags": [],
   "resourceType": "GMScript",
 }

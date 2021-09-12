@@ -91,12 +91,6 @@ if (self.ph_colls_enable) {
 	
 	#endregion
 	
-	#region move_platform
-	
-	
-	
-	#endregion
-	
 }
 #endregion
 

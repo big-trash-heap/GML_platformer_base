@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprPhCollision",
-    "path": "sprites/sprPhCollision/sprPhCollision.yy",
+    "name": "sprPhTypeMain",
+    "path": "sprites/sprPhTypeMain/sprPhTypeMain.yy",
   },
   "solid": false,
   "visible": false,
@@ -33,7 +33,7 @@
     "path": "folders/platromer.yy",
   },
   "resourceVersion": "1.0",
-  "name": "objPhCollision",
+  "name": "objPhTypeMain",
   "tags": [],
   "resourceType": "GMObject",
 }
